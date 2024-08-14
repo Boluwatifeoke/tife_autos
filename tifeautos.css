@@ -1,0 +1,212 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+header{
+    background-image: url(images/bmw.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    padding: 1vw 0;
+    align-items: center;
+    position: static;
+}
+nav h1{
+    color: white;
+}
+span{
+    color: red;
+}
+nav ul{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+nav ul li a{
+    color: white;
+    padding: 15px 20px;
+}
+nav ul li a:hover{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
+#active{
+    background-color: red;
+    color: white;
+    border-radius: 20px;
+}
+nav img{
+    display: none;
+}
+.des{
+    padding-top: 13vw;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.des h1{
+    color: white;
+}
+.des p{
+    color: white;
+    line-height: 2vw;
+    font-size: 15px;
+    font-weight: 100;
+}
+.des button{
+    border: none;
+    border-radius: 20px;
+    padding: 15px 50px;
+    background-color: red;
+    color: white;
+    margin-top: 1vw;
+}
+.des button:hover{
+    background-color: white;
+    color: red;
+}
+.hero{
+    padding: 3vw 5vw;
+    text-align: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.hero h1{
+    text-align: center;
+}
+.hero p{
+    text-align: center;
+    color: red;
+    padding-bottom: 1vw;
+}
+.hero img{
+    width: 40vh;
+    height: 30vh;
+    object-fit: fill;
+}
+.car-display{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 3vw; 
+}
+.categories{
+    padding: 3vw 5vw;
+    height: 60vh;
+    text-align: center;
+}
+.categories button{
+    padding: 15px 50px;
+    border: none;
+    border-radius: 20px;
+    background: red;
+    color: white;
+    margin-top: 1vw;
+}
+.categories button:hover{
+    background-color: black;
+    color: red;
+}
+.logo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3vw;
+    padding-top: 4vw;
+}
+.logo img{
+    height: 30vh;
+    width: 40vh;
+    object-fit: contain;
+}
+.order{
+    text-align: center;
+    padding: 3vw 5vw;
+    height: 55vh;
+}
+.order p{
+    padding: 2vw 0;
+}
+.place{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3vw;
+}
+.img img{
+    width: 40vh;
+    height: 30vh;
+    object-fit: fill;
+}
+.newsletter{
+    margin-top: 10vw;
+    padding: 3vw 5vw;
+    height: 30vh;
+    text-align: center;
+    align-items: center;
+    background-color: #242424;
+    color: white;
+}
+.newsletter input{
+    height: 45px;
+    width: 33%;
+    border-radius: 20px;
+    color: black;
+
+}
+.newsletter button{
+    padding: 1vw 13vw;
+    border: none;
+    border-radius: 20px;
+    background: red;
+    color: white;
+    margin-top: 2vw;
+}
+.newsletter button:hover{
+    background-color: white;
+    color: red;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    height: 40vh;
+    background: black;
+    color: white;
+    line-height: 3vw;
+    padding: 3vw 5vw;
+}
+
+
+@media (max-width: 767px) {
+    body{
+        width: 100%;
+        overflow-x: hidden      ;
+    }
+    nav img{
+        display: block;
+        width: 70px;
+    }
+    nav ul li a{
+        display: none;
+    }
+    .des{
+        padding-top: 40vw;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .des p{
+        line-height: 15px;
+    }
+
+}
+
